@@ -1,0 +1,26 @@
+.loading {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999999999999999999;
+}
+
+.loader-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(30deg, var(--blue), var(--orange)); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

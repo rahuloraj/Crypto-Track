@@ -1,0 +1,145 @@
+.compareModal{
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.compareTitle__section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+
+.compareTitle{
+    font-size: 16px;
+}
+
+.compareTitle span{
+    color: var(--blue);
+}
+
+.compareInput__section{
+    position: relative;
+}
+
+.selectText{
+    font-size: 12px;
+    padding: 0 0 0.25rem 0.5rem;
+}
+
+.compareInput{
+    background: none;
+    border: 2px solid var(--light-gray);
+    border-radius: 0.75rem;
+    color: var(--black);
+    height: 50px;
+    margin-bottom: 1rem;
+    outline: none;
+    padding-left: 5%;
+    width: 95%;
+}
+
+.compareInput:focus{
+    border: 2px solid var(--orange);
+}
+
+.arrowIcon{
+    position: absolute;
+    right: 20px;
+    top: 42px;
+}
+
+.arrowIcon path{
+    stroke: var(--black);
+}
+
+.optionsSection{
+    background-color: var(--white);
+    border: 2px solid var(--light-gray);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    max-height: 150px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 100%;
+    z-index: 9999999999999;
+}
+
+.optionCoin{
+    align-items: center;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.optCoinImg{
+    height: 20px;
+    margin-right: 1rem;
+    width: 20px;
+}
+
+.noResults{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.compareIcon__section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comparisonResult{
+    align-items: center;
+    border: 1px solid var(--light-gray);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.resultFormula{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.resultFormula strong{
+    font-size: 18px;
+}
+
+@media(min-width: 500px){
+    .compareTitle{
+        font-size: 20px;
+    }
+}

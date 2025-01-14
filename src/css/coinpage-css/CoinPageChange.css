@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    text-align: center;
+    width: 100%;
+}
+
+tr{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #535353;
+    padding: 0.25rem 0;
+    width: 100%;
+}
+
+.priceChangePerGreen {
+    color: var(--blue);
+}
+
+.priceChangePerRed {
+    color: var(--orange);
+}
+
+@media (min-width: 520px) {
+    td,
+    th {
+        padding: 0.625rem 0;
+    }
+}

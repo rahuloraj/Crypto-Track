@@ -1,0 +1,118 @@
+.coinPagePrice{
+    font-size: 35px;
+}
+
+.coinPagePriceWrapper{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.coinPagePriceRed, .coinPagePriceGreen{
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.3rem;
+}
+
+.coinPagePriceRed{
+    background-color: #df865386;
+    color: var(--orange);
+    min-width: 45px;
+}
+
+.coinPagePriceGreen{
+    background-color: #5353e450;
+    color: var(--blue);
+    min-width: 45px;
+}
+
+.priceChangeGreen, .priceChangeRed{
+    align-items: center;
+    border-bottom:  1px solid #535353;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0.5rem 0;
+}
+
+.greenPrice {
+    background-color: #5353e450;
+    border-radius: 0.5rem;
+    color: var(--blue);
+    margin-left: 5.5rem;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.redPrice {
+    background-color: #df865386;
+    border-radius: 0.5rem;
+    color: var(--orange);
+    margin-left: 5.5em;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.coinPagePriceChangeSection{
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 335px){
+    .coinPagePrice{
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 435px){
+    .coinPagePrice__section{
+        padding: .5rem 0 1rem;
+    }
+
+    .coinPagePrice{
+        font-size: 44px;
+    }
+
+    .coinPagePriceChangeSection{
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .coinPagePriceChangeSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .coinPagePrice__section {
+        padding: 0;
+    }
+
+    .coinPagePriceWrapper{
+        justify-content: right;
+    }
+
+    .priceChangeGreen, .priceChangeRed {
+        border: none;
+        flex-direction: row;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    .greenPrice, .redPrice {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 1050px){
+    .coinPagePrice__section{
+        padding: 0.5rem 0 1rem;
+    }
+    
+    .coinPagePrice{
+        font-size: 38px;
+    }
+}
+
+
+
+

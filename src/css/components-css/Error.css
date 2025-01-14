@@ -1,0 +1,22 @@
+.errorWindow{
+    align-items: center;
+    background: linear-gradient(30deg in hsl shorter hue, var(--blue), var(--orange));
+    color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999999999999999;
+}
+
+.errorWindow h2{
+    font-size: 30px;
+}
+
+.errorWindow p{
+    font-size: 20px;
+}

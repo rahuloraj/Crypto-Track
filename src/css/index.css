@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  --blue: #5353e4;
+  --border-color: #535353;
+  --dark-blue: #2176de;
+  --gray: #232323;
+  --light-gray: #939393;
+  --orange: #df8653;
+  --pink: #b95b8d;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 14px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  min-width: 300px;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.app{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+a{
+  color: var(--black);
+  text-decoration: none;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*themes*/
+
+.dark{
+  --black: #ebebeb;
+  --converterColor1:#0D0D0D;
+  --converterColor2:#1A1A1A;
+  --white: #000000;
+}
+
+.light{
+  --black: #000000;
+  --converterColor1:#cdcdcd;
+  --converterColor2:#969696;
+  --white: #ebebeb;
+}
+
+/*pop-up*/
+.backgroundBlur{
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.233);
+  box-sizing: border-box;
+  display: flex;
+  height: 100svh;
+  justify-content: center;
+  padding: 48px 0px 58px;
+  pointer-events: auto;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  transition: all 0.2s ease-in 0s;
+  width: 100%;
+  z-index: 999;
+}
+
+.window {
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 700px;
+  padding: 1rem 1.4rem;
+  position: relative;
+  transform: translateY(20px); 
+  transition: all 0.2s ease-in;
+  width: 80%;
+  z-index: 999999;
+}
+
+.closeIcon__section{
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0 1rem;
+  width: 100%;
+}
+
+.closeIcon path{
+  stroke: var(--black);
+}

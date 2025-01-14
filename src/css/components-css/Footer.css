@@ -1,0 +1,23 @@
+footer{
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    bottom: 0;
+    color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: center;
+    left: 0;
+    padding: 0.5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+}
+
+.footerLink{
+    color: var(--light-gray);
+    font-weight: 700;
+    margin-left: 0.2rem;
+    text-decoration: none;
+}

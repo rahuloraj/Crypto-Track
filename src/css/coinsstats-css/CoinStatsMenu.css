@@ -1,0 +1,117 @@
+.menusBtnSection{
+    background-color: var(--white);
+    bottom: 0;
+    box-shadow: 0 0 5px 5px var(--light-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.favoriteMenuBtn, .compareMenuBtn, .darkModeBtn{
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45px;
+    margin: 0.3rem 0.75rem;
+    outline: none;
+    transition: 1s;
+    min-width: 70px;
+}
+
+.favoriteMenuBtn:hover, .compareMenuBtn:hover, .darkModeBtn:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.menuIcon{
+    fill: var(--black);
+}
+
+.darkModeBtn path{
+    stroke: var(--black);
+}
+
+@media (min-width: 1050px){
+    .menusBtnSection{
+        background: none;
+        bottom: 1rem;
+        box-shadow: none;
+        color: var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        position: fixed;
+        right: 0.5rem;
+        width: auto;
+        z-index: 99;
+    }
+
+    .favoriteMenuBtn, .compareMenuBtn, .darkModeBtn{
+        border-radius: 50%;
+        height: 60px;
+        margin: 0.3rem 0;
+        min-width: auto;
+        transition: 1s;
+        width: 60px;
+    }
+
+    .favoriteMenuBtn{
+        background-color: var(--orange);
+    }
+
+    .favoriteMenuBtn:hover{
+        box-shadow: 0 0 10px 5px var(--orange);
+    }
+
+    .compareMenuBtn{
+        background-color: var(--pink);
+    }
+
+    .compareMenuBtn:hover{
+        box-shadow: 0 0 10px 5px var(--pink);
+    }
+
+    .darkModeBtn{
+        background-color: var(--blue);
+    }
+
+    .darkModeBtn:hover{
+        box-shadow: 0 0 10px 5px var(--blue);
+    }
+
+    .menuIcon{
+        fill: #ebebeb;
+        height: 25px;
+        width: 25px;
+    }
+
+    .darkModeBtn path{
+        stroke: #ebebeb;
+    }
+
+    .favoriteMenuBtnTitle{
+        display: none;
+    }
+}
+
+@media (min-width: 1150px) {
+    .menusBtnSection{
+        bottom: 2rem;
+        right: 1.5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .menusBtnSection{
+        bottom: 2rem;
+        right: 3rem;
+    }
+}

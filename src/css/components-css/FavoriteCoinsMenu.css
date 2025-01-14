@@ -1,0 +1,110 @@
+.portfolio{
+    min-height: 100px;
+}
+
+.portfolioNone{
+    align-items: center;
+    color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolioList{
+    display: flex;
+    flex-direction: column;
+}
+
+.favCoin{
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+}
+
+.favCoinDetails, .favCoinStats{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.favName{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.favImg{
+    height: 40px;
+    padding: 0 0.5rem;
+    width: 40px;
+}
+
+.favCoinStats{
+    position: relative;
+}
+
+.favPrice{
+    font-size: 16px;
+    padding-right: 2rem;
+}
+
+.threeDotsIcon{
+    fill: var(--black);
+}
+
+.favMenu{
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: auto;
+    padding: 0.5rem;
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    transform: translateY(20px);
+    transition: all 0.2s ease-in 0s;
+    width: 150px;
+    z-index: 999999;
+}
+
+.favLinkBtn, .favDeleteBtn{
+    background: none;
+    border-radius: 1rem;
+    color: var(--black);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    text-align: left;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.favLinkBtn:hover, .favDeleteBtn:hover{
+    background-color: rgba(128, 128, 128, 0.344);
+}
+
+.favLinkBtn{
+    margin-bottom: 0.3rem;
+}
+
+.favHr{    
+    width: 100%;
+}
+
+.favDeleteBtn{
+    border: none;
+    font-size: 16px;
+    margin-top: 0.3rem;
+    outline: none;
+}

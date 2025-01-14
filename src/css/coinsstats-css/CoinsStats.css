@@ -1,0 +1,403 @@
+.bckgr {
+    background: linear-gradient(30deg in hsl shorter hue, var(--white) 25%, var(--blue), var(--orange));
+    height: 100svh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.secondTitle__section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90svh;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+}
+
+.mobilePage {
+    bottom: 0;
+    position: absolute;
+}
+
+.secondTitle {
+    animation: 1s fadeInUp;
+    color: var(--black);
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    text-align: left;
+    width: auto;
+}
+
+.trackingText {
+    color: var(--orange);
+}
+
+.insightsText {
+    color: var(--blue);
+}
+
+.subTitle {
+    animation: 1s fadeInLeft;
+    color: var(--light-gray);
+    font-size: 12px;
+    padding-left: 0.8rem;
+    text-align: left;
+    width: 90%;
+}
+
+.scrollNext__section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+    width: 100%;
+}
+
+.scrollNext {
+    -webkit-transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    animation: 1s fadeInRight;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    font-size: 16px;
+    padding: 1.2rem 0;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    width: 90%;
+}
+
+.scrollNext:hover, 
+.scrollNext:focus, 
+.scrollNext:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.coinsStatsSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 9;
+}
+
+.inputSearch__section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    position: relative;
+}
+
+.inputSearch {
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+    color: var(--black);
+    font-size: 16px;
+    height: 20px;
+    margin-top: 2rem;
+    outline: none;
+    padding: 0.5rem;
+    width: 270px;
+    z-index: 9;
+}
+
+.inputSearch::placeholder {
+    color: var(--black);
+}
+
+.inputSearch:focus {
+    background-color: rgba(91, 91, 91, 0.205);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.cryptoSection {
+    align-items: center;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto 4rem;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.legendRow__section {
+    display: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media (min-width: 400px) {
+    .secondTitle {
+        font-size: 40px;
+        padding-left: 1.2rem;
+    }
+
+    .subTitle {
+        padding-left: 1.4rem;
+    }
+
+    .scrollNext {
+        padding: 0.9rem 0;
+    }
+
+    .inputSearch{
+        width: 350px;
+    }
+}
+
+@media (min-width: 435px) {
+    .bckgr {
+        background: linear-gradient(30deg in hsl shorter hue, var(--white) 75%, var(--blue), var(--orange));
+        z-index: 0;
+    }
+
+    .secondTitle__section{
+        height: 100%;
+        padding-left: 0;
+        padding-top: 8%;
+        z-index: 1;
+    }
+
+    .mobilePage {
+        height: 100%;
+        position: relative;
+    }
+
+    .secondTitle {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .subTitle {
+        padding: 0 4rem;
+        text-align: center;
+        width: auto;
+    }
+
+    .inputSearch__section {
+        margin: 2.5rem auto;
+    }
+
+    .inputSearch {
+        margin-top: 0;
+        width: 330px;
+    }
+
+    .scrollNext__section {
+        display: none;
+    }
+
+    .cryptoSection {
+        border: 1px solid gray;
+        margin: 1rem auto 4rem;
+        padding-top: 1rem;
+        width: 400px;
+    }
+}
+
+@media (min-width: 520px) {
+    .subTitle {
+        font-size: 13px;
+    }
+
+    .cryptoSection {
+        width: 510px;
+    }
+}
+
+@media (min-width: 580px) {
+    .secondTitle__section{
+        padding-top: 2%;
+    }
+
+    .secondTitle {
+        font-size: 30px;
+    }
+
+    .cryptoSection {
+        padding-top: 0;
+        width: 545px;
+    }
+
+    .legendRow__section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        justify-content: center;
+        padding: 1.5rem 4rem 0;
+        width: 450px;
+    }
+
+    .legendRow {
+        display: grid;
+        grid-template-columns: 16% 30% 20% 22%;
+        max-width: 360px;
+        padding-bottom: 1.2rem;
+        width: 100%;
+    }
+
+    .legendFirst, 
+    .legendSecond {
+        text-align: left;
+    }
+
+    .legendThird, 
+    .legendFourth {
+        text-align: right;
+    }
+
+    .legendGraph {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .cryptoSection {
+        width: 560px;
+    }
+}
+
+@media (min-width: 690px) {
+    .cryptoSection {
+        width: 660px;
+    }
+
+    .legendRow__section {
+        width: 440px;
+    }
+
+    .legendRow {
+        max-width: 440px;
+    }
+}
+
+@media (min-width: 850px) {
+    .inputSearch {
+        width: 530px;
+    }
+
+    .cryptoSection {
+        width: 820px;
+    }
+
+    .legendRow__section {
+        width: 550px;
+    }
+
+    .legendRow {
+        grid-template-columns: 12% 20% 24% 19% 25%;
+        max-width: 550px;
+    }
+
+    .legendGraph {
+        display: block;
+        margin-right: 2em;
+        text-align: right;
+    }
+}
+
+@media (min-width: 891.98px) {
+    .secondTitle {
+        font-size: 40px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .inputSearch__section {
+        margin: 2rem auto;
+    }
+
+    .cryptoSection {
+        width: 1010px;
+    }
+
+    .legendRow__section {
+        width: 710px;
+    }
+
+    .legendRow {
+        max-width: 710px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .cryptoSection {
+        width: 1100px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .subTitle {
+        padding: 0 16rem;
+    }
+
+    .legendRow__section {
+        width: 790px;
+    }
+
+    .legendRow {
+        max-width: 790px;
+    }
+
+    .cryptoSection {
+        width: 1200px;
+    }
+}

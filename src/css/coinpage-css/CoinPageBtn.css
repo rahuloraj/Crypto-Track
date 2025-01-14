@@ -1,0 +1,52 @@
+.coinPageBtnSection {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.coinPageBackBtn__section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.backBtn {
+    color: var(--black);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.backBtn:hover {
+    color: #c6c6c6;
+    transition: 0.3s;
+}
+
+.arrowRightIcon {
+    margin: 0 0.3125rem;
+}
+
+.currencyBtn {
+    background-color: var(--converterColor2);
+    border: none;
+    border-radius: 1rem;
+    color: #ebebeb;
+    font-size: 0.75rem;
+    font-weight: 700;
+    height: 100%;
+    outline: none;
+    padding: 0.5rem 0.6rem;
+}
+
+.arrowBtn {
+    margin-left: 0.25rem;
+}
+
+@media (min-width: 385px) {
+    .currencyBtn {
+        font-size: 0.875rem;
+    }
+}

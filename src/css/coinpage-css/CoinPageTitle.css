@@ -1,0 +1,134 @@
+.coinPageTitle__section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+}
+
+.coinImage {
+    display: none;
+}
+
+.mobileImage {
+    display: block;
+    width: 80%;
+}
+
+.coinPageTitle {
+    align-items: center;
+    column-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin-top: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.mobileName {
+    width: 100%;
+}
+
+.coinPageName__section {
+    overflow: hidden;
+    text-align: left;
+}
+
+.titleInfo{
+    display: flex;    
+    flex-direction: row;
+}
+
+.coinPageSymbol {
+    color: gray;
+    margin-right: 0.5rem;
+}
+
+.coinPageCapRank {
+    background-color: var(--gray);
+    border-radius: 2rem;
+    padding: 0.1rem 0.5rem;
+}
+
+.coinPageName {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 235px;
+}
+
+@media (min-width: 435px) {
+    .coinPageTitle__section {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .coinImage {
+        display: block;
+        height: 22px;
+        margin-right: 0.4rem;
+        width: 22px;
+    }
+
+    .mobileImage {
+        display: none;
+    }
+
+    .coinPageTitle {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .coinPageName__section {
+        overflow: auto;
+    }
+
+    .coinPageName {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 768px) {
+    .coinImage {
+        height: 80px;
+        width: 80px;
+    }
+
+    .coinPageTitle{
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: 1rem;
+    }
+
+    .coinPageName {
+        font-size: 40px;
+        max-width: 300px;
+    }
+
+    small{
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .coinPageName {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .coinPageName {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .coinPageName {
+        max-width: 700px;
+    }
+}

@@ -1,0 +1,32 @@
+.coinPageInfoSection{
+    font-size: 14px;
+    width: 100%;
+}
+
+.lineInfo{
+    align-items: center;
+    border-bottom: 1px solid #535353;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.lineInfoTitle{
+    display: flex;
+}
+
+.allTimeSection{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.allTimeDate{
+    color: var(--light-gray);
+    font-size: 12px;
+    padding-top: 0.3rem;
+    text-align: right;
+}

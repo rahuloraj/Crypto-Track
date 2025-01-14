@@ -1,0 +1,41 @@
+.mainTitle__section {
+    height: 10svh;
+    position: relative;
+    z-index: 101;
+}
+
+.mainTitle__content {
+    padding-left: 3%;
+    padding-top: 6%;
+    width: auto;
+}
+
+.mainTitle {
+    font-size: 20px;
+}
+
+@media (min-width: 435px) {
+    .mainTitle__section {
+        height: auto;
+    }
+
+    .mainTitle__content {
+        padding-top: 3%;
+        width: 100%;
+    }
+
+    .mainTitle {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 520px) {
+    .mainTitle__section {
+        position: relative;
+        z-index: 9;
+    }
+
+    .mainTitle {
+        font-size: 16px;
+    }
+}

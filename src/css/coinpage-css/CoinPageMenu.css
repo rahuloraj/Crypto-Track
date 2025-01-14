@@ -1,0 +1,66 @@
+.backgroundBlur{
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    box-sizing: border-box;
+    display: flex;
+    height: 100svh;
+    justify-content: center;
+    padding: 48px 0px 58px;
+    pointer-events: auto;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transition: all 0.2s ease-in 0s;
+    width: 100%;
+    z-index: 999;
+}
+
+.currencyMenu{
+    background-color: var(--converterColor1);
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 260px;
+    z-index: 9;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    width: 100%
+}
+
+.currenceBtn{
+    align-items: center;
+    background-color: var(--converterColor1);
+    border: none;
+    border-radius: 1rem;
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.9rem 0;
+    width: 100%;
+}
+
+.currenceBtn:hover{
+    background-color: var(--converterColor2);
+    transition: 500ms;
+}
+
+.flagIcon{
+    height: 100%;
+    margin-right: 0.2rem;
+    width: 20px;
+}
+
+@media(min-width: 520px){
+    .currencyMenu{
+        width: 60%;
+    }
+}

@@ -1,0 +1,85 @@
+.converter__section{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1rem 0 2rem;
+    width: 100%;
+}
+
+.converterTitle{
+    font-size: 15px;
+    margin: 1em 0 0.75rem;
+}
+
+.converter{
+    background-color: var(--converterColor1);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 80px;
+    position: relative;
+    width: 100%;
+}
+
+.infoConverter{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+
+.imgConverter{
+    height: 20px;
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+.nameConverter{
+    text-transform: uppercase;
+}
+
+.inputConverter{
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    max-width: 500px;
+    outline: none;    
+    padding-left: 5%;
+    width: 95%;
+}
+
+.convertedCoinSection{
+    background-color: var(--converterColor2);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.priceConverted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 500px;
+    overflow-y: scroll;
+    padding-left: 5%;
+    width: 95%;
+}
+
+.symbolConverted{
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
+
+@media (min-width: 1050px){
+    .converter__section{
+        margin-top: 0.5em;
+    }
+}
